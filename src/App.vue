@@ -1,26 +1,18 @@
+<!-- App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <router-view /> <!-- Aquí se renderizarán los componentes de la aplicación según las rutas -->
+    <LoginLogoutButtons />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoginLogoutButtons from './components/LoginLogoutButtons.vue'; // Supongo que aquí tienes tu componente de autenticación
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    LoginLogoutButtons
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
